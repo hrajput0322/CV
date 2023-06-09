@@ -1,0 +1,255 @@
+body {
+    background-color: #26282B;
+    color: white;
+    text-align: center;
+}
+
+.btn {
+    margin-right: 10px;
+}
+
+.nav-link, .dropdown-item {
+    cursor: pointer;
+}
+
+.carousel-container {
+    height: 80vh;
+    width: 80vw;
+    border: 3px solid black;
+    margin-top: 2.5%;
+}
+
+p {
+    font-size: large;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    height: 50px;
+    width: 50px;
+    margin: auto 20px auto 20px;
+    position: fixed;
+}
+
+.carousel-indicators {
+    position: fixed;
+}
+
+a {
+    text-decoration: none;
+    padding: 2.5px;
+    color: white;
+}
+
+h1 {
+    font-size: 5rem;
+    font-family: 'Sacramento', cursive;
+}
+
+.main-page {
+    margin: auto;
+    height: 80vh;
+    width: 80vw;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 5px;
+}
+
+.main-page-content {
+    margin: auto;
+}
+
+.profile-image-div, .education-image-div, .contact-image-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-image {
+    height: 77.5vh;
+    width: auto;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 5%;
+    margin-top: 2.5%;
+}
+
+.projects-image {
+    height: auto;
+    width: 20vw;
+    border-radius: 20px;
+}
+
+td {
+    font-size: large;
+    padding: 5px;
+}
+
+.skills-content, .education-content, .contact-content {
+    display: flex;
+    justify-content: center;
+}
+
+.skills-image-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills-image {
+    width: 50%;
+}
+
+.skills-logo {
+    width: 50px;
+}
+
+#about p {
+    margin-bottom: 5%;
+    color: rgb(199, 199, 199);
+}
+
+.education-image, .contact-image {
+    margin: 10px;
+}
+
+.gmail-icon {
+    width: 30px;
+}
+
+.social {
+    margin-top: 30vh;
+}
+
+/* ART PAGE */
+.art-page-image {
+    border-radius: 20px;
+    width: 100%;
+    margin: 1%;
+    transform: scale(1);
+    transition: 0.3s ease-out;
+}
+
+.art-page-image:hover {
+    cursor: pointer;
+    position: relative;
+    transform: scale(1.125);
+    z-index: 1;
+}
+
+/* MUSIC PAGE */
+.shorts,.videos {
+    border-radius: 2.5%;
+    border: solid 1px white;
+    margin: 2%;
+}
+
+
+@media (max-width: 480px){
+    img, p {
+        margin-bottom: 10%;
+    }
+
+    h2 {
+        margin-bottom: 10%;
+    }
+
+    td, p {
+        font-size: medium;
+    }
+
+    td {
+        padding: 0;
+    }
+
+    .social {
+        margin-top: 10vh;
+    }
+
+    .art-page-image{
+        width: 100%;
+    }
+    .profile-image {
+        height: 50vh;
+        width: auto;
+        margin: 0;
+    }
+
+    .projects-image {
+        height: auto;
+        width: 70vw;
+    }
+
+    .main-page.row>* {
+        padding-left: 0;
+    }
+
+    .carousel-container {
+        border: none;
+    }
+
+    .main-page {
+        margin: 0;
+        width: 77.5vw;
+    }
+
+    .main-page-content {
+        margin: 0;
+    }
+
+    .links {
+        width: 0;
+        height: 0;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 991px){
+    .links {
+        width: 0;
+        height: 0;
+    }
+
+    .profile-image {
+        height: 50vh;
+        width: auto;
+        margin: 0;
+    }
+
+    .projects-image {
+        height: auto;
+        width: 67.5vw;
+    }
+
+    .carousel-container {
+        border: none;
+    }
+
+    .main-page {
+        margin: 0;
+        width: 75vw;
+    }
+}
+
+
+@media (min-width: 992px) and (max-width: 1280px){
+    .profile-image {
+        height: 50vh;
+        width: auto;
+        margin: 0;
+    }
+
+    .projects-image {
+        height: auto;
+        width: 30vw;
+    }
+
+    .main-page {
+        margin: 0;
+        width: 75vw;
+    }
+}
